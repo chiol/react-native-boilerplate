@@ -4,4 +4,5 @@ android
 docs
 ios
 .vscode
-.github%
+.github
+.yarn
