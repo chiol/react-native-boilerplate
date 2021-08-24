@@ -1,0 +1,63 @@
+{
+    "name": "reactnativeboilerplate",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "android": "react-native run-android",
+        "ios": "react-native run-ios",
+        "start": "react-native start",
+        "test": "jest",
+        "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    },
+    "dependencies": {
+        "@emotion/native": "11.0.0",
+        "@emotion/react": "11.4.1",
+        "@react-navigation/native": "6.0.2",
+        "@react-navigation/native-stack": "^6.1.0",
+        "axios": "^0.21.1",
+        "react": "17.0.1",
+        "react-native": "0.64.2",
+        "react-native-dotenv": "^3.2.0",
+        "react-native-keyboard-aware-scroll-view": "^0.9.4",
+        "react-native-safe-area-context": "^3.3.0",
+        "react-native-screens": "^3.5.0",
+        "react-query": "3.21.0",
+        "recoil": "0.3.1"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.12.9",
+        "@babel/runtime": "^7.12.5",
+        "@react-native-community/eslint-config": "^2.0.0",
+        "@react-native-community/eslint-plugin": "^1.1.0",
+        "@testing-library/jest-native": "^4.0.2",
+        "@testing-library/react-native": "^7.2.0",
+        "@types/concurrently": "^6",
+        "@types/eslint-plugin-prettier": "^3",
+        "@types/jest": "^26.0.23",
+        "@types/prettier": "^2",
+        "@types/react-dom": "^17",
+        "@types/react-native": "^0.64.5",
+        "@types/react-native-dotenv": "^0.2.0",
+        "@types/react-test-renderer": "^16.9.2",
+        "@typescript-eslint/eslint-plugin": "^4.29.2",
+        "@typescript-eslint/parser": "^4.29.2",
+        "babel-jest": "^26.6.3",
+        "babel-plugin-module-resolver": "^4.1.0",
+        "concurrently": "^6.2.1",
+        "eslint": "^7.14.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-import-resolver-babel-module": "^5.3.1",
+        "eslint-plugin-import": "^2.24.1",
+        "eslint-plugin-prettier": "^3.4.0",
+        "eslint-plugin-react": "^7.24.0",
+        "jest": "^26.6.3",
+        "metro-react-native-babel-preset": "0.64.0",
+        "prettier": "^2.3.2",
+        "react-dom": "^17.0.2",
+        "react-test-renderer": "17.0.1",
+        "typescript": "^3.8.3"
+    },
+    "resolutions": {
+        "@types/react": "^17"
+    }
+}
