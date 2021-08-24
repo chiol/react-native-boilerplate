@@ -32,12 +32,17 @@ module.exports = {
             { allowDeclarations: true },
         ],
         "react/prop-types": "off",
+        "@typescript-eslint/no-empty-function": "off",
+        "@typescript-eslint/no-unused-vars": ["error"],
+        "react/react-in-jsx-scope": "off",
     },
     settings: {
         "import/resolver": {
             node: {
                 paths: ["src"],
+                extensions: [".ts", ".tsx"],
             },
+            "babel-module": {},
         },
         "import/ignore": ["node_modules"],
         react: {

@@ -3,7 +3,7 @@ import styled from "@emotion/native";
 import TitleText from "common/components/TitleText";
 import MessageView from "../MessageView";
 import MessageInput from "../MessageInput";
-import { MessageContext } from "domains/Message/contexts/messageContext";
+import { MessageContext } from "../../contexts/messageContext";
 
 const MssageTemplate: React.FC = () => {
     const [messages, setMessages] = useState<string[]>([]);
@@ -27,7 +27,7 @@ const MssageTemplate: React.FC = () => {
 
 const Container = styled.View`
     flex-direction: column;
-    height: 100%;
+    flex: 1;
 `;
 const ViewBox = styled.View`
     flex: 5;

@@ -6,6 +6,12 @@ module.exports = {
             {
                 root: ["./src"],
                 extensions: [".ts", ".tsx"],
+                alias: {
+                    "@": "./src",
+                    "@User": "./src/domains/User",
+                    "@Product": "./src/domains/Product",
+                    "@Message": "./src/domains/Message",
+                },
             },
         ],
         [

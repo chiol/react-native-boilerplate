@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "@emotion/native";
-import { CurrentUserBox, ModifyUser } from "domains/User/components";
-import { ProductList } from "domains/Product/components";
-import { MessageTemplate } from "domains/Message/components";
+import { CurrentUserBox, ModifyUser } from "@User/components";
+import { ProductList } from "@Product/components";
+import { MessageTemplate } from "@Message/components";
 
 const MainScreen: React.FC = () => {
     return (
@@ -23,17 +23,16 @@ const MainScreen: React.FC = () => {
     );
 };
 const Container = styled.SafeAreaView`
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    flex: 1;
 `;
 const BaseView = styled.View`
-    height: 40%;
+    flex: 1 0 40%;
     border: 1px;
-    flex: 1 1 40%;
     margin: 5px;
+    height: 30%;
 `;
 const LeftTop = styled(BaseView)``;
 const RightTop = styled(BaseView)``;

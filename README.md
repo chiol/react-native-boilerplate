@@ -31,6 +31,8 @@
 -   devtools
 -   react-native-navigation
 
+추후 적용...
+
 ## emotion
 
 -   @emotion/react
@@ -61,13 +63,15 @@ react-native 버전도 낮음...
 -   react-query
 -   axios
 
-## react-native-config
+## react-native-config vs react-native-dotenv
 
-안드로이드 추가 설정
-android/settings.gradle 파일에 아래 내용을 추가하고,
+## testing
 
-include ':react-native-config'
-project(':react-native-config').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-config/android')
-android/app/build.gradle 파일의 두번쨰 줄에 아래 내용을 추가해 준다.
+-   react-test-renderer
 
-apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.gradle"
+    -   package
+        -   react-dom <- recoil
+
+-   @testing-library/react-native
+    -   package
+        -   @testing-library/jest-native

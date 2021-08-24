@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "@emotion/native";
 import { useRecoilValue } from "recoil";
-import { userState } from "../../../../atoms/UserState";
 import { Text } from "react-native";
 import TitleText from "common/components/TitleText";
+import { userState } from "@/atoms/user.atom";
 
 const CurrentUserBox: React.FC = () => {
     const state = useRecoilValue(userState);

@@ -20,6 +20,6 @@ const ProductList: React.FC = () => {
     );
 };
 const Container = styled.View`
-    height: 100%;
+    flex: 1;
 `;
 export default ProductList;

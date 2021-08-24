@@ -3,7 +3,7 @@ import { Text } from "react-native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import styled from "@emotion/native";
 import { useRecoilValue } from "recoil";
-import { userState } from "atoms/UserState";
+import { userState } from "@/atoms/user.atom";
 
 interface ISplashScreenProps {
     navigation: NativeStackNavigationProp<any>;

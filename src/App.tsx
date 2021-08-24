@@ -3,6 +3,7 @@ import { StatusBar } from "react-native";
 import AppContainer from "./router";
 import { RecoilRoot } from "recoil";
 import { QueryClient, QueryClientProvider } from "react-query";
+
 const queryClinet = new QueryClient();
 const App: React.FC = () => {
     return (

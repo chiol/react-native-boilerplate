@@ -3,7 +3,6 @@ import {
     NavigationContainer,
     useNavigationContainerRef,
 } from "@react-navigation/native";
-import { useFlipper } from "@react-navigation/devtools";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { SplashScreen } from "../screens";
 import LoginScreen from "../screens/LoginScreen";
@@ -13,7 +12,6 @@ const { Navigator, Screen } = createNativeStackNavigator();
 
 const AppContainer: React.FC = () => {
     const navigationRef = useNavigationContainerRef();
-    useFlipper(navigationRef);
 
     return (
         <NavigationContainer ref={navigationRef}>

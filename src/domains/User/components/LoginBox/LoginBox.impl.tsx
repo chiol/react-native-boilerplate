@@ -3,8 +3,8 @@ import styled from "@emotion/native";
 import { TextInputBox } from "../../../../common/components";
 import { Button } from "react-native";
 import { useRecoilState } from "recoil";
-import { userState } from "../../../../atoms/UserState";
 import { useNavigation } from "@react-navigation/native";
+import { userState } from "@/atoms/user.atom";
 
 const LoginBox: React.FC = () => {
     const navigation = useNavigation();
@@ -14,7 +14,7 @@ const LoginBox: React.FC = () => {
 
     const onPress = () => {
         console.log({ id, password });
-        setUserState({ loggined: true, id });
+        setUserState({ id });
         navigation.navigate("main");
     };
     return (
